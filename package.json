@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "ts-node-dev --respawn --poll index.ts",
+    "dev": "nodemon --watch index.ts --exec ts-node index.ts",
     "build": "tsc",
     "start:prod": "node dist/index.js"
   },
@@ -13,7 +14,9 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^24.8.1",
+    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
   }
 }
