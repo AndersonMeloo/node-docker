@@ -1,4 +1,4 @@
-FROM node:21
+FROM node:22
 
 WORKDIR /app
 
@@ -9,5 +9,7 @@ COPY . .
 
 EXPOSE 3000
 
-# npm run start
-CMD ["npm", "start"]
+# npm run start/dev
+CMD ["npm", "run", "start"]
+
+# package.json → --watch
