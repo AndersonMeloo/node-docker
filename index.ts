@@ -2,7 +2,7 @@ import http, { IncomingMessage, ServerResponse } from "http"
 
 const server = http.createServer((req: IncomingMessage, resp: ServerResponse) => {
 
-    resp.end("Docker running Node.js")
+    resp.end("Docker running Node.js. Running")
 })
 
 server.listen(3000, () => {
